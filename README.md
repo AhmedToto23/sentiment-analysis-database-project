@@ -213,7 +213,7 @@ sentiment-analysis-database-project/
 ├── Creating Queries.sql
 
 └── Documentation.pdf
-
+```
 
 ## 🛠 Technology Stack
 
@@ -257,19 +257,22 @@ sentiment-analysis-database-project/
 ```bash
 git clone <repository-url>
 cd sentiment-analysis-database-project/backend
+```
 
 ```bash
 python -m venv env
+```
 
 ```bash
 # Windows
 env\Scripts\activate
 # Linux / macOS
 source env/bin/activate
+```
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 ## Create a .env file:
 ```bash
@@ -277,10 +280,11 @@ DATABASE_URL=mssql+pyodbc://username:password@server/database?driver=ODBC+Driver
 SECRET_KEY=your-secret-key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
+```
 
 ```bash
 alembic upgrade head
-
+```
 
 ## Frontend Setup
 
@@ -288,7 +292,7 @@ alembic upgrade head
 cd ../frontend
 npm install
 npm start
-
+```
 
 ## Sentiment Model
 
@@ -296,7 +300,7 @@ npm start
 cd ../sentiment-model
 pip install -r requirements.txt
 streamlit run app.py
-
+```
 
 ## Analytics Dashboard
 
@@ -304,7 +308,7 @@ streamlit run app.py
 cd ../run-queries
 pip install -r requirements.txt
 streamlit run app.py
-
+```
 
 ## 🏃 Running the Application
 
@@ -312,7 +316,7 @@ Backend
 
 ```bash
 uvicorn app.main:app --reload
-
+```
 - API: http://localhost:8000
 
 - Docs: http://localhost:8000/docs
@@ -321,7 +325,7 @@ Frontend
 
 ```bash
 npm start
-
+```
 
 - App: http://localhost:3000
 
